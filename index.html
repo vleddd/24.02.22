@@ -361,7 +361,7 @@
 const map = new maplibregl.Map({
   container: 'map',
   style: 'https://api.maptiler.com/maps/01966ded-9a2b-7a36-bad5-71bc7e8b2bf7/style.json?key=A7YSMrQ3OZ0oStEWILkD',
-  center: [27.663574218750004, 53.90110181472827],
+  center: [32.82714843750001, 48.864714761802794],
   zoom: 6,
   touchZoomRotate: true,
   interactive: true
@@ -376,20 +376,15 @@ const mapStyles = {
 
 // Данные полигонов
 const idToName = {
-  "72dca429-0108-4676-b20e-f1f7ab55b46a": "Чеченская Республика",
-  "62b4f90d-0bc9-4631-834a-bbb65cdf4c9d": "Чеченская Республика"
+  "5cdb851b-4447-41b6-ae6f-a134e8b00236": "ЛДНР",
+  "80c27733-0eea-4845-93f5": "Крым"
 };
 
-const occupiedIds = ["d60e7b1b-b7a9-4763-b632-029c59627b1f",
-                     "395ddd61-f694-408c-ac0e-269670f5d04a",
-                     "2e3ee6cd-6d07-48eb-b010-12fbcd706373",
-                     "ade81fec-b748-4d6f-9af3-e02e46edbeaa",
-                     "7b0e4b78-22cf-4877-9e9e-85ab4d3fe9f3",
+const occupiedIds = ["ab28e189-9fec-4ae6-a99d-531cfeec89db",
+                     "77132e43-f14e-4079-b9da-566e2241cc72",
 ];
   
 const liberatedIds = ["0cbca80c-2842-4f8d-8b69-39cb393fdd5d",
-                      "5118d929-c2ed-422f-ae2f-32fedf931ae5",
-                      "a7522ad2-ce75-46bf-8942-eccc792a2bb7",
                      ];
 
 const newLiberatedIds = [
@@ -400,16 +395,7 @@ const liberatedRus = [
 
 ];
   
-const availableDates = ["22.09.2025_04-00",
-                        "22.09.2025_12-00",
-                        "22.09.2025_16-00",
-                        "22.09.2025_19-00",
-                        "23.09.2025_10-00",
-                        "23.09.2025_13-00",
-                        "23.09.2025_19-00",
-                        "24.09.2025_10-00",
-                        "24.09.2025_13-00",
-                        "24.09.2025_18-00",
+const availableDates = ["24.02.2022_05-00",
                        ];
 
 const updates = [
@@ -804,6 +790,7 @@ map.on('error', (e) => {
 </script>
 </body>
 </html>
+
 
 
 
