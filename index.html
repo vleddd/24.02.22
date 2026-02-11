@@ -394,9 +394,13 @@ const occupiedIds = ["ab28e189-9fec-4ae6-a99d-531cfeec89db",
                      "0e3bfcc3-b769-4a3d-9b91-d648858fc243",
                      "6e0b8a06-8a35-4cc3-b55b-0e7018392cac",
                      "7327b964-8a81-4ae1-8106-a620cab56179",
+                     "45795743-b061-435a-8869-1dd30353af9b",
+                     "8d52e584-6baa-4409-bf7f-6d1c4da6b455",
 ];
   
 const liberatedIds = ["44200ac9-efae-459e-9f61-9381193dd74b",
+                      "58d91096-eb9b-4d71-a8ac-2572594e7f4a",
+                      "46992de3-ea2a-4eec-bebf-05b0b43c0b39",
                      ];
 
 const newLiberatedIds = [
@@ -473,7 +477,7 @@ function processGeoJSON(geojson) {
       f.properties.customName = "Освобождено";
       f.properties.fillColor = "#5BC779";
     } else if (liberatedIds.includes(id)) {
-      f.properties.customName = "Под Контролем РФ";
+      f.properties.customName = "Освобождено";
       f.properties.fillColor = "#3498db";
     } else if (liberatedRus.includes(id)) {
       f.properties.customName = "Освобождено";
@@ -808,6 +812,7 @@ map.on('error', (e) => {
 </script>
 </body>
 </html>
+
 
 
 
